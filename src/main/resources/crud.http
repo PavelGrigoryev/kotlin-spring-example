@@ -1,0 +1,41 @@
+###findAll emplyees
+GET http://localhost:8080/employees
+Accept: application/json
+
+###create new employee#1
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "Pavel",
+  "lastName": "Grigoryev",
+  "email": "Jakarta@email.jkt"
+}
+
+###create new employee#2
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "Алёша",
+  "lastName": "Чернобаев",
+  "email": "Бабай@email.by"
+}
+
+###findById employee
+GET http://localhost:8080/employees/63567ddb5dafb8194c53d080
+Accept: application/json
+
+###update employee
+PUT http://localhost:8080/employees/63567ddb5dafb8194c53d080
+Content-Type: application/json
+
+{
+  "firstName": "Sveta",
+  "lastName": "Svetikova",
+  "email": "Svetlana@email.org"
+}
+
+###delete employee
+DELETE http://localhost:8080/employees/63567ddb5dafb8194c53d080
+Content-Type: application/json
