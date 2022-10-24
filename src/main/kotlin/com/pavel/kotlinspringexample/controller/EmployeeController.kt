@@ -30,7 +30,6 @@ class EmployeeController(private val employeeService: EmployeeService) {
     }
 
     @DeleteMapping("/{id}")
-    fun deleteById(@PathVariable("id") id: String) {
-        return employeeService.deleteById(id)
-    }
+    fun deleteById(@PathVariable("id") id: String) = employeeService.deleteById(id)
+
 }
